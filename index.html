@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Themes must be after Bootstrap CSS -->
+
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme4.css"> -->
+<link rel="stylesheet" type="text/css" href="theme6.css">
+<link rel="stylesheet" type="text/css" href="theme7.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    
+    <!-- use this style for testing and development purposes -->
+    <style type="text/css">
+    .container{border: 0px solid lightgreen;}
+    .row{border: 0px dotted ligthblue;}
+    .row [class*=' col-']{border: 0px solid lightgray;}
+    </style>
+    
+</head>
+<body>
+<!-- to disable stickling bar to screen, remove class: navbar-fixed-top -->
+    <nav class = "navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- hamburger button. do not touch!  -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collaspe" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- HOME BUTTON: REPLACE href="#" with your landing page url            -->
+                <a class="navbar-brand" href="#">Coder In You Course
+                    <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome) -->
+                    <i class="fa fa-telegram"></i>
+                </a>
+            </div>
+
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collaspe-1">       
+                <!-- THIS UL HANDLES OUR LINKS -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://facebook.com">facebook</a></li>
+                    <li><a href="http://facebook.com">facebook2</a></li>
+                    <!-- to make more links, make some <li> in here -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+
+
+    <!-- everything will be in this container -->
+    <div class="container">
+     <!-- row 1: jumbotron : main piece of information -->
+        <div class="row"> <!-- row 1 -->
+
+            <div class=" col-xs-12
+                col-sm-12
+                col-md-12
+                col-lg-12">  
+                <div class="bg"></div>              
+                    <div class="jumbotron">
+                    <h1 class="animated slideInRight">We Live in Interesting world!</h1>
+                    <i class="fa fa-globe -fa-fw fa-4x fa-spin" ></i>
+                    <p class="animated slideInRight">1st Stop Germany's Nuremburg</p>
+                    <p><a class="btn btn-primary btn-lg animated bounce" href="http://www.germany.travel/en/index.html" role="button">Learn more</a></p>
+                </div>
+            </div> <!-- end of col -->
+        </div><!-- end of row 1 -->
+
+    <!-- row 2: Thumbnails -->
+    <div class="row"><!--  Row 2 -->
+
+        <!-- col 1 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+                   
+            <div class="thumbnail"> 
+            <img src="DSC03810.JPG" alt="">
+              
+               <div class="caption">
+               <h3>Nuremburg</h3>
+               <p>Beautiful Old Town Building at the River</p>
+               <a href="https://www.nuernberg.de/internet/stadtportal_e/" class="btn-primary btn-sm">Learn more</a>
+                </div> 
+            </div> 
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="DSC03816.JPG">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                </ul>
+            </nav>
+
+
+
+
+    </div> <!-- end of col 1 -->
+
+      <!-- col 2 -->
+    <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+                   
+            <div class="thumbnail"> 
+                <img src="DSC03815.JPG" alt="">
+               <div class="caption">
+               <h3>Nuremburg</h3>
+               <p>Beautiful Old Town Building at the River where the October Fest Event hosted</p>
+               <a href="https://www.nuernberg.de/internet/stadtportal_e/" class="btn-primary btn-sm">Learn more</a>
+               </div> 
+            </div> 
+        </div> <!-- end of col 2 -->
+
+        <!-- col 3 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+                   
+            <div class="thumbnail"> 
+                <img src="DSC03816.JPG" alt="">
+               <div class="caption">
+               <h3>Nuremburg</h3>
+               <p>Entrance to the Old Town of Nuremburg</p>
+               <a href="https://www.nuernberg.de/internet/stadtportal_e/" class="btn-primary btn-sm">Learn more</a>
+               </div> 
+            </div> 
+        </div> <!-- end of col 3 -->
+    </div> <!-- end of row 2 -->
+
+<hr>
+ 
+    <!-- row 3 -->
+    <div class="row">
+        <div class="col-xs-12
+                col-sm-12
+                col-md-12
+                col-lg-12">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2Leki14DT8M"></iframe>
+            </div>        
+        </div> <!-- end of col -->
+    </div><!-- end of row 3 -->
+
+<hr>
+
+    <!-- row 4 -->
+    <div class="row">
+    <!-- left panel-->
+        <div class="col-xs-12
+                    col-sm-6
+                    col-md-6
+                    col-lg-6">
+
+            <div class="panel panel-default">
+                <div class="panel-body" >
+                 <!-- <div class="col-xs-12" style="border: 1px solid black"> -->
+                <form action="https://coderinyou-1332.appspot.com/submit" method="post">
+
+                        <legend>Sign up</legend>  
+
+                    <div class="form-group">
+            
+                        <label for="name-id">name</label>
+                        <input type="text" class="form-control" name="USERNAME" id="name-id">
+                            <div class="alert alert-danger hidden" id="name-error-id">requires minimum 4 characters
+                            </div>
+
+                        <label for="email-id">email</label>
+                        <input type="email" class="form-control" name="EMAIL" id="email-id">
+                            <div class="alert alert-danger hidden" id="email-error-id">requires minimum 8 characters
+                            </div>
+                    </div>
+ 
+    
+                    <div class="form-group">
+                        <div class="radio">
+                        <label>
+                        <input type="radio" 
+                        name="newsletter"
+                        value="weekly"
+                        checked="checked">
+                            Send me weekly newsletters        
+                        </label>
+                        </div>  
+
+                        <div class="radio">
+                        <label>
+                        <input type="radio" 
+                        name="newsletter"
+                        value="never"
+                        >
+                            Don't send me newsletters        
+                        </label>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox">  
+                    <label>
+                    <input type ="checkbox" id="cb-id" name="PDPA" value="agree" > I agree to the terms
+                    </label>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="submit" id="submit-id"class="btn btn-primary" disabled>
+                    </div>
+
+            <!-- </div> end of col  -->
+            </form>
+        <!-- </div> -->
+       
+    </div> <!-- end of panel body -->
+    </div> <!-- end of panel -->
+</div> <!-- end of left panel -->
+
+
+
+
+<!-- right panel -->
+ <div class="col-xs-12
+                    col-sm-6
+                    col-md-6
+                    col-lg-6 text-center">
+        
+        <h1 class="text-primary">Nuremberg Nürnberg</h1>
+        <hr>
+        <p>Nuremberg (/ˈnjʊərəmbɜːrɡ/; German: Nürnberg; pronounced [ˈnʏɐ̯nbɛɐ̯k] ( listen)[2]) is a city on the river Pegnitz and the Rhine–Main–Danube Canal in the German state of Bavaria, in the administrative region of Middle Franconia, about 170 kilometres (110 mi) north of Munich. It is the second-largest city in Bavaria (after Munich), and the largest in Franconia (Franken). The population as of February 2015, is 517,498, which makes it Germany's fourteenth-largest city. The urban area also includes Fürth, Erlangen and Schwabach with a total population of 763,854. The "European Metropolitan Area Nuremberg" has ca. 3.5 million inhabitants.[3]
+                    </p>
+
+    </div> <!-- end of right panel -->
+
+</div> <!-- end of row 4 -->
+
+<!-- Row 5 -->
+<div class="row">
+    
+<!-- col 1 -->
+    <div class="panel-body" >
+    <!-- <div class="col-xs-12" style="border: 1px solid black"> -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+
+        <h3 class="text-center">Table title</h3>
+            <table class="table table-hover">
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+
+                <tr>
+                    <td>Monday to Thursday</td>
+                    <td>9am - 5pm</td>
+
+                </tr>
+
+                 <tr>
+                    <td>Friday and Saturday</td>
+                    <td>$11am - 3am</td>  
+                 </tr>   
+                 <tr>
+                     <td>Sunday</td>
+                     <td>Close</td>   
+
+                 </tr>
+
+
+            </table>       
+        
+        </div> <!-- end of col 1 -->
+       
+
+        <!-- col 2 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+    <!-- google map -->
+    <div  class="embed-responsive embed-responsive-4by3">
+        <iframe src="https://goo.gl/I0U5Dd" class="embed-responsive-item"></iframe>
+     
+
+    </div >
+              
+        
+        </div> <!-- end of col 2 -->
+
+        <!-- col 3 -->
+        <div class="col-xs-12
+                    col-sm-4
+                    col-md-4
+                    col-lg-4">
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                <i class="fa fa-plane -fa-fw"></i> one
+            </a>
+            <a href="#" class="list-group-item">
+               <i class="fa fa-phone -fa-fw"></i> two
+            </a>
+            <a href="#" class="list-group-item">
+               <i class="fa fa-telegram -fa-fw"></i> three
+            </a>
+        </div>           
+        
+
+
+        </div> <!-- end of col 3 -->
+ 
+
+ </div><!--  end of panel  -->
+
+
+</div> <!-- end of row 5-->
+<hr>
+
+<!-- Row 6 -->
+
+<div class="row">
+        <div class="col-xs-12
+                    col-sm-12
+                    col-md-12
+                    col-lg-12">
+                    <ul class="list-inline text-center">
+                        <li>
+                        <a href="#"><i class="fa fa-telegram fa-2x"></i> </a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-snowflake-o fa-2x"></i> </a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-book fa-2x"></i> </a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-car fa-2x"></i> </a>
+                        </li>
+                    </ul>
+
+
+        </div>    
+
+
+</div><!--  end of row 6 -->
+
+
+
+
+</div> <!-- end of container -->
+
+
+
+   
+
+<!-- jquery -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- wow.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+<!-- <script src="js/wow.min.js"></script> -->
+<script>new WOW().init();</script>
+
+<!-- attached the java script -->
+<script type="text/javascript" src="page.js"></script>
+
+</body>
+</html>
